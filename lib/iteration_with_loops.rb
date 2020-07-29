@@ -9,10 +9,8 @@ while row_index < src.count do
   column_index = 0
   smallest_element = row[column_index]
 
-  while column_index < row.count do
-    #if row[column_index] < smallest_element
-     # smallest_element = row[column_index]
-    #end
+  while column_index < row.count do    #if row[column_index] < smallest_element
+     # smallest_element = row[column_index]  #end
     smallest_element = row.min
     column_index += 1
   end
@@ -21,4 +19,4 @@ while row_index < src.count do
   row_index += 1
 end
 results_array
-end 
+end
