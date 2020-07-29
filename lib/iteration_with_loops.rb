@@ -4,16 +4,20 @@ def find_min_in_nested_arrays(src)
   min_temp_week = []
 
   row_index = 0
-  while row_index < src.count do
+  while row_index < src.count do 
+    row = src[row_index]
+    column_index = 0 
+    smallest_element = row[column_index]
 
-    element_index = 0
-    while element_index < src[row_index].count do
-      p src[row_index][element_index].min
+    while column_index < row.count do
+      #if row[column_index] < smallest_element
+       # smallest_element = row[column_index]
+      #end
+      smallest_element = row.min
+      column_index += 1 
+    end
 
-    element_index += 1
-  end
-
-    min_temp_week << smallest_element
+    results_array << row.min
     row_index += 1
   end
   min_temp_week
